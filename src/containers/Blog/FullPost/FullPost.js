@@ -21,7 +21,7 @@ class FullPost extends Component {
     }
 
     deletePosthandler = () =>{
-        axios.delete('/posts/' + this.props.id)
+        axios.delete('/posts/' + this.props.id) // for dynamic url
              .then(response =>{
                 console.log(response);
              })
